@@ -16,14 +16,14 @@ public class HibernateService {
     }
 
     public List<Person> getPersonsByCity(String city) {
-        return personRepository.findByCityOfLiving(city);
+        return personRepository.findByCity(city);
     }
 
     public List<Person> getPersonsByAgeLessThan(int age) {
-        return personRepository.findByPersonKeyAgeLessThan(age);
+        return personRepository.findByAge(age);
     }
 
     Optional<Person> getPersonsByNameAndSurname(String name, String surname) {
-        return personRepository.findByPersonKeyNameAndPersonKeySurname(name, surname);
+        return personRepository.findByName(name, surname);
     }
 }
