@@ -15,11 +15,7 @@ import javax.persistence.*;
 @Table(name = "persons")
 public class Person {
     @EmbeddedId
-    PersonKey personKey;
-
-    @Column(nullable = false)
-    String phoneNumber;
-
-    @Column(nullable = false)
-    String cityOfLiving;
+    private PersonKey personKey;
+    private String phoneNumber;
+    private String cityOfLiving;
 }
