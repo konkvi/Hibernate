@@ -1,4 +1,4 @@
-package org.konkvistador.springboot;
+package org.konkvistador.springboot.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

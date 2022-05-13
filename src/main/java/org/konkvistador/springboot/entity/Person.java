@@ -1,9 +1,10 @@
-package org.konkvistador.springboot;
+package org.konkvistador.springboot.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Data

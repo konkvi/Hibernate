@@ -1,6 +1,9 @@
-package org.konkvistador.springboot;
+package org.konkvistador.springboot.controller;
 
+import org.konkvistador.springboot.entity.Person;
+import org.konkvistador.springboot.service.HibernateService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

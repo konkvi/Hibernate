@@ -1,5 +1,7 @@
-package org.konkvistador.springboot;
+package org.konkvistador.springboot.service;
 
+import org.konkvistador.springboot.entity.Person;
+import org.konkvistador.springboot.repository.CustomizedPersonCrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,7 +25,7 @@ public class HibernateService {
         return personRepository.findByAge(age);
     }
 
-    Optional<Person> getPersonsByNameAndSurname(String name, String surname) {
+    public Optional<Person> getPersonsByNameAndSurname(String name, String surname) {
         return personRepository.findByName(name, surname);
     }
 }

@@ -1,8 +1,9 @@
-package org.konkvistador.springboot;
+package org.konkvistador.springboot.repository;
 
+import org.konkvistador.springboot.entity.Person;
+import org.konkvistador.springboot.entity.PersonKey;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
