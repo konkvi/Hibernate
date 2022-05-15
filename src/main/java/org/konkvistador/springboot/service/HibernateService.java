@@ -26,6 +26,10 @@ public class HibernateService {
     }
 
     public Optional<Person> getPersonsByNameAndSurname(String name, String surname) {
-        return personRepository.findByName(name, surname);
+        return personRepository.findByFullName(name, surname);
+    }
+
+    public Optional<Person> getPersonsByName(String name) {
+        return personRepository.findByFirstName(name);
     }
 }

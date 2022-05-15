@@ -19,7 +19,10 @@ public interface CustomizedPersonCrudRepository extends JpaRepository<Person, Pe
     List<Person> findByAge(int age);
 
     @Query("select p from Person p where p.personKey.name=:name and p.personKey.surname=:surname")
-    Optional<Person> findByName(String name, String surname);
+    Optional<Person> findByFullName(String name, String surname);
+
+    @Query("select p from Person p where p.personKey.name=:name")
+    Optional<Person> findByFirstName(String name);
 
     //1 - метод, который принимает название города(city) и возвращает Entity из базы данных,
     // которые соответствуют этому city.
